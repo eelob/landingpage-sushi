@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header> <!--HERO-->
         <div>
             <h1>Sakura Sushi</h1>
             <p>Descubra a verdadeira essência da culinária japonesa, onde tradição milenar encontra sabor autêntico</p>
@@ -22,12 +22,185 @@
         </div>
     </header>
 
-    <main>
+    <main> <!--PRINCIPAL-->
+            <section> <!--PRIMEIRA PARTE-->
+                <h2>Nossa História</h2>
+                <p>Há mais de duas décadas, o Sakura Sushi trouxe para o Brasil a autêntica experiência gastronômica japonesa. Nosso compromisso com a tradição e qualidade nos tornou referência em culinária nipônica.</p>
+                <p>Cada prato é preparado com técnicas milenares, utilizando apenas ingredientes frescos e selecionados. Nossos chefs mestres dedicam anos ao aperfeiçoamento de cada receita, honrando a rica cultura culinária do Japão.</p>
+                <p>No Sakura Sushi, não servimos apenas comida - criamos uma jornada sensorial que conecta você à essência da gastronomia japonesa.</p>
 
+                <div>
+                    <span>25+</span>
+                    <span>Anos de Tradição</span>
+                </div>
+                <div>
+                    <span>50k+</span>
+                    <span>Clientes Satisfeitos</span>
+                </div>
+                <div>
+                    <span>100%</span>
+                    <span>Ingredientes Frescos</span>
+                </div>
+            </section>
+            
+            <section>
+                <img src="" alt="">
+
+                <div>
+                    <span>&#x1F338</span>
+                </div>
+            </section>
+
+            <section> <!--SEGUNDA PARTE-->
+                <div>
+                    <h2>Nossos Pratos Especiais</h2>
+                    <p>Uma seleção cuidadosa dos nossos pratos mais apreciados, preparados com ingredientes premium e técnicas tradicionais</p>
+                </div>
+
+                <div> <!--PRATOS-->
+                    <!--PRATO 1-->
+                    <div>
+                        <img src="" alt="">
+                        <h3>Sushi Premium</h3>
+                        <p>Seleção especial de peixes frescos, incluindo salmão, atum e linguado, preparados pelo nosso chef master</p>
+
+                        <span>R$89,90</span>
+                        <button>Adicionar ao Pedido</button>
+                    </div>
+                    <!--PRATO 2-->
+                    <div>
+                        <img src="" alt="">
+                        <h3>Ramen Tradicional</h3>
+                        <p>Caldo especial cozido por 12 horas com macarrão artesanal, ovo marinado e vegetais selecionados</p>
+
+                        <span>R$45,90</span>
+                        <button>Adicionar ao Pedido</button>
+                    </div>
+                    <!--PRATO 3-->
+                    <div>
+                        <img src="" alt="">
+                        <h3>Sashimi Deluxe</h3>
+                        <p>Fatias generosas dos melhores peixes do dia, cortados na espessura perfeita</p>
+
+                        <span>R$95,90</span>
+                        <button>Adicionar ao Pedido</button>
+                    </div>
+
+                    <div>
+                        <a href="#">Ver Cardápio Completo</a>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!--TERCEIRA PARTE-->
+                <section>
+                    <div>
+                        <h2>Visite-nos</h2>
+                        <p>Desfrute de uma experiência gastronômica única em nosso ambiente acolhedor e elegante, onde cada detalhe foi pensado para seu conforto.</p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span>&#x1F4CD</span>
+                            <h3>Endereço</h3>
+                            <p>Rua das Flores, 123 <br> Jardins, São Paulo - SP <br> CEP: 01234-567</p>
+                        </div>
+
+                        <div>
+                            <span>&#x1F550</span>
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Segunda a Quinta: 18h00 - 23h00 <br> Sexta e Sábado: 18h00 - 00h00 <br> Domingo: 18h00 - 22h00</p>
+                        </div>
+
+                        <div>
+                            <span>&#x1F4DE</span>
+                            <h3>Contato</h3>
+                            <p>(11) 3456-7890 <br> contato@sakurasushi.com.br</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <h3>Reserve sua Mesa</h3>
+                        <form>
+                            <div>
+                                <label for="nome">Nome</label> <br>
+                                <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div>
+                                <label for="telefone">Telefone</label> <br>
+                                <input type="tel" name="telefone" id="telefone" placeholder="(11) 99999-9999" required>
+                            </div>
+                            <div>
+                                <label for="data">Data</label> <br>
+                                <input type="date" name="data" id="data" required>
+                            </div>
+                            <div>
+                                <label for="horario">Horário</label> <br>
+                                <input type="time" name="horario" id="horario" min="18:00" max="22:00" value="18:00" required>
+                            </div>
+                            <div>
+                                <label for="pessoas">Número de Pessoas</label> <br>
+                                <select name="pessoas" id="pessoas" required>
+                                    <option value="2">2 pessoas</option>
+                                    <option value="3">3 pessoas</option>
+                                    <option value="4">4 pessoas</option>
+                                    <option value="5">5 pessoas</option>
+                                    <option value="6">6+ pessoas</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="observacao">Observações</label> <br>
+                                <textarea name="observacao" id="observacao" rows="10" placeholder="Alguma preferência especial ou necessidade alimentar?"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit">Confirmar Reserva</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
     </main>
 
     <footer>
+        <div>
+            <h2>Sakura Sushi</h2>
+            <p>Há mais de 25 anos oferecendo a mais autêntica experiência da culinária japonesa, com ingredientes frescos e técnicas tradicionais.</p>
 
+            <div>
+                <a href="#">&#x1F4D8</a>
+            </div>
+            <div>
+                <a href="#">&#x1F4F7</a>
+            </div>
+            <div>
+                <a href="#">&#x1F426</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Contato</h3>
+            <p>&#x1F4CD Rua das Flores, 123 <br> Jardins, São Paulo - SP</p>
+            <p>&#x1F4DE (11) 3456-7890</p>
+            <p>&#x2709 contato@sakurasushi.com.br</p>
+        </div>
+
+        <div>
+            <p>&copy; 2024 Sakura Sushi. Todos os direitos reservados. | Desenvolvido para demonstração de portfólio</p>
+        </div>
     </footer>
 </body>
 </html>
