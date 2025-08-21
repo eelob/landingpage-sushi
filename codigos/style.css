@@ -252,3 +252,127 @@ a {
     margin: 0 auto 50px;
     line-height: 1.3;
 }
+
+.pratos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.prato-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.prato-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+.imagem-pratos {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.categoria-prato {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #BD2828;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.conteudo-pratos {
+    padding: 25px;
+}
+
+.conteudo-pratos h3 {
+    font-size: 1.5rem;
+    color: #1F1F1F;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.pratos-descricao {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 88, 88);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    min-height: 60px;
+}
+
+.pratos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pratos-preco {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #be2e2e;
+    font-weight: bold;
+}
+
+.adicionar-ao-pedido {
+    background-color: #1F1F1F;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.adicionar-ao-pedido:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+.cardapio-completo-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cardapio-completo-botao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: transparent;
+    background-color: #F4C025;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cardapio-completo-botao:hover {
+    background-color: #ffcc35;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.categoria-titulo {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    color: #1F1F1F;
+    margin: 40px 0 20px;
+    padding-top: 20px;
+    border-top: 2px solid #F4C025;
+}
