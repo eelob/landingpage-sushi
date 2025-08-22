@@ -255,9 +255,13 @@ a {
 
 .pratos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 30px;
     margin-bottom: 40px;
+    
+    max-width: 1500px; 
+    margin: 0 auto; 
+    padding: 0 20px;
 }
 
 .prato-card {

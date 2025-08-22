@@ -1,7 +1,7 @@
 // Efeito de rolagem suave
 document.querySelector('.scroll').addEventListener('click', () => {
     window.scrollBy({
-        top: window.innerHeight - 100,
+        top: window.innerHeight - 90,
         behavior: 'smooth'
     });
 });
