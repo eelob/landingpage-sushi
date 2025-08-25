@@ -182,9 +182,16 @@
                                 <label for="date">Data</label>
                                 <input type="date" id="date" required>
                             </div>
+
                             <div class="form-group">
                                 <label for="time">Horário</label>
-                                <input type="time" id="time" min="18:00" max="23:30" value="18:00" required>
+                                <select id="time" required>
+                                    <option value="18">18:00</option>
+                                    <option value="19">19:00</option>
+                                    <option value="20">20:00</option>
+                                    <option value="21">21:00</option>
+                                    <option value="22">22:00</option>
+                                </select>
                             </div>
                         </div>
 
@@ -215,42 +222,44 @@
         </section>
     </main>
 
-    <footer>
-        <div>
-            <h2>Sakura Sushi</h2>
-            <p>Há mais de 25 anos oferecendo a mais autêntica experiência da culinária japonesa, com ingredientes
-                frescos e técnicas tradicionais.</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Sakura Sushi</h2>
+                <p>Há mais de 25 anos oferecendo a mais autêntica experiência da culinária japonesa, com ingredientes
+                    frescos e técnicas tradicionais.</p>
 
-            <div>
-                <a href="#">&#x1F4D8</a>
+                <div class="footer-emojis">
+                    <div>
+                        <a href="#">&#x1F4D8</a>
+                    </div>
+                    <div>
+                        <a href="#">&#x1F4F7</a>
+                    </div>
+                    <div>
+                        <a href="#">&#x1F426</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#">&#x1F4F7</a>
+            <div class="footer-links">
+                <h3 class="links-title">Links Rápidos</h3>
+                <ul class="links-list">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="#">&#x1F426</a>
+            <div class="footer-contact">
+                <h3 class="contact-title">Contato</h3>
+                <p>&#x1F4CD Rua das Flores, 123 <br> Jardins, São Paulo - SP</p>
+                <p>&#x1F4DE (11) 3456-7890</p>
+                <p>&#x1F4E7 contato@sakurasushi.com.br</p>
             </div>
         </div>
 
-        <div>
-            <h3>Links Rápidos</h3>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Contato</h3>
-            <p>&#x1F4CD Rua das Flores, 123 <br> Jardins, São Paulo - SP</p>
-            <p>&#x1F4DE (11) 3456-7890</p>
-            <p>&#x2709 contato@sakurasushi.com.br</p>
-        </div>
-
-        <div>
+        <div  class="footer-bottom">
             <p>&copy; 2024 Sakura Sushi. Todos os direitos reservados. | Desenvolvido para demonstração de portfólio</p>
         </div>
     </footer>
