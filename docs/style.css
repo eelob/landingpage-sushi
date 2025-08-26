@@ -13,7 +13,7 @@ a {
 /* HERO */
 
 .hero-section {
-    background-image: url(imagens/image-hero.jpg);
+    background-image: url(../imagens/image-hero.jpg);
     
     height: 100vh;
     background-size: cover;
